@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .page-login{
     background-image: url('img/background.png');
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', serif;
   color: #4A4A4A;
   display: flex;
   justify-content: center;
@@ -126,7 +126,7 @@ label{
 .box{
   color: #000000;
   font-size: 20px;
-font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', serif;
 padding: 15px;
 text-align: center;
 }
@@ -135,7 +135,7 @@ text-align: center;
     .box{
         color: #000000;
         font-size: 20px;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Montserrat', serif;
       padding: 15px;
       text-align: center;
     }
@@ -144,7 +144,8 @@ text-align: center;
 .header-text{
     color: #000000;
     font-size: 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   padding: 15px;
   text-align: center;
 }

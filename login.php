@@ -27,7 +27,7 @@
 
                         <label>Masukkan Password</label>
                         <div class="form-field">
-                            <input type="password" name="pass" placeholder="Password"/>
+                            <input type="password" name="pass" placeholder="Password" required/>
                         </div>
                         <div class="form-field-button">
                             <button class="btn-register" name="register" type="registers">Register</button>
@@ -38,7 +38,7 @@
                 <div class="text-confirmation">
                 <?php 
                     if(isset($_POST['submit'])){
-                        $user = $_POST['user'];
+                        $user = mysqli_real_escape_string($conn, $_POST['user']);
                         $pass = $_POST['pass'];
 
                         $cek = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = '".$user."' ");
@@ -50,7 +50,7 @@
                                 $_SESSION['uname'] = $ada ->nama;
                                 $_SESSION['ulevel'] = $ada ->level;
 
-                                echo "<script>window.location = 'admin/index.php' </script>";
+                                echo "<script>window.location = 'admin-site/admin-site.php' </script>";
                             }
                             else{
                                 echo "Password salah.";
