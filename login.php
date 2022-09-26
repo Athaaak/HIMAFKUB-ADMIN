@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    include 'koneksi.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -9,21 +14,56 @@
 
     <body>
         <!-- partial:index.partial.html -->
-        <div id="bg"></div>
+    <div class="page-login">
+        <form action="" method="POST">
+            <div class="box">
+                <div class="header-text">HIMAFKUB-ADMIN</div>
+                <div class="box-body">
+                        
+                        <label>Masukkan Username</label>
+                        <div class="form-field">
+                            <input type="text" name="user" placeholder="Username"/>
+                        </div>
 
-    <form>
-            <div class="form-field">
-                <input type="email" placeholder="Email / Username" required/>
+                        <label>Masukkan Password</label>
+                        <div class="form-field">
+                            <input type="password" name="pass" placeholder="Password"/>
+                        </div>
+                        <div class="form-field-button">
+                            <button class="btn-register" name="register" type="registers">Register</button>
+                            <button class="btn-login" name="submit" type="submit">Log in</button>
+                        </div>
+                </form>
+
+                <div class="text-confirmation">
+                <?php 
+                    if(isset($_POST['submit'])){
+                        $user = $_POST['user'];
+                        $pass = $_POST['pass'];
+
+                        $cek = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = '".$user."' ");
+                        if(mysqli_num_rows($cek) > 0){
+                            $ada = mysqli_fetch_object($cek);
+                            if(md5($pass) == $ada->password){
+                                $_SESSION['status_login'] = true;
+                                $_SESSION['uid'] = $ada ->id;
+                                $_SESSION['uname'] = $ada ->nama;
+                                $_SESSION['ulevel'] = $ada ->level;
+
+                                echo "<script>window.location = 'admin/index.php' </script>";
+                            }
+                            else{
+                                echo "Password salah.";
+                            }
+                        }else{
+                            echo "Username tidak ditemukan.";
+                        }
+                    }
+                ?>
+                </div>
             </div>
-  
-            <div class="form-field">
-                <input type="password" placeholder="Password" required/>
-            </div>
-  
-            <div class="form-field">
-                <button class="btn" type="submit">Log in Test</button>
-            </div>
-    </form>
+    </div>
+    
 
 <!-- partial -->
     </body>
