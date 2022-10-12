@@ -19,10 +19,9 @@
             <div class="box">
                 <div class="header-text">HIMAFKUB-ADMIN</div>
                 <div class="box-body">
-                        
                         <label>Masukkan Username</label>
                         <div class="form-field">
-                            <input type="text" name="user" placeholder="Username"/>
+                            <input type="text" name="user" placeholder="Username" required/>
                         </div>
 
                         <label>Masukkan Password</label>
@@ -50,7 +49,7 @@
                                 $_SESSION['uname'] = $ada ->nama;
                                 $_SESSION['ulevel'] = $ada ->level;
 
-                                echo "<script>window.location = 'admin-site/admin-site.php' </script>";
+                                echo "<script>window.location = 'admin-site/dashboard.php' </script>";
                             }
                             else{
                                 echo "Password salah.";

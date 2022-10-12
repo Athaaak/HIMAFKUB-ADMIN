@@ -93,3 +93,51 @@ a{
     text-align: center;
     font-size: 12px;
 }
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.table th,
+.table td{
+    border: 1px solid;
+    padding: 8px;
+    border-color: #ddd;
+}
+
+.table td:first-child{
+    width: 50px;
+    text-align: center;
+}
+
+.table td:last-child{
+    width: 150px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    position: center;
+}
+
+form input {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 3px 0px;
+    font-size: 17px;
+    color: #4A4A4A;
+    text-indent: 10px;
+}
+  
+label{
+      font-size: 18px;
+      padding: 10px;
+      padding-left: 0px;
+      text-align: left;
+      display: block;
+  }
