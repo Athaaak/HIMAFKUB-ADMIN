@@ -12,7 +12,7 @@
                 <div class="container">
                     <a class="navbar-brand" href="#">
                             <img src="./img-source/aksara.png" alt="AksaraAsa" class="logo">
-                            <label class="text-logo">BEM ASKARA ASA <br>FK UB 2022</label>
+                            <label class="text-nav-logo">BEM ASKARA ASA <br>FK UB 2022</label>
                     </a>
                         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                             <span class="navbar-toggler-icon"></span>
@@ -32,11 +32,95 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Kementrian & Biro
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <label class="dropdown-text">Kementrian dan Biro FK UB</label>
+                                    <div class="dropdown-list">
+                                        <div class="drop-logo-firstrow">
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="./img-source/BIRO ADMIN.png" alt="" class="drop-logo" width="50" height="50">
+                                                    <label class="text-drop-logo">Biro Admin</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="./img-source/KEMENTERIAN PSDM.png" alt="" class="drop-logo"width="50" height="50">
+                                                    <label class="text-drop-logo">Kementrian PSDM</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="./img-source/KEMENTERIAN DAGRI.png" alt="" class="drop-logo"width="50" height="50">
+                                                    <label class="text-drop-logo">Kementrian DAGRI</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="./img-source/KEMENTERIAN PANDORA.png" alt="" class="drop-logo"width="50" height="50">
+                                                    <label class="text-drop-logo">Kementrian Pandora</label>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop-logo-secondrow">
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="drop-logo-thirdrow">
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                            <div class="logo-box">
+                                                <a href="#">
+                                                    <img src="" alt="" class="drop-logo">
+                                                    <label class="text-drop-logo">Kementrian 1</label>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </li>
                                 <li class="nav-item">
                                 <a class="nav-link" href="#">SOP Kolegium</a>

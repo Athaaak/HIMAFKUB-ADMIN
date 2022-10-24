@@ -33,13 +33,58 @@
     color: white;
 }
 
+.dropdown-menu{
+    background-color: #FFEEE1;
+    left: 50%;
+}
+
+.drop-logo{
+    border: 1px solid;
+}
+
+.text-drop-logo{
+    text-decoration: none;
+    text-align: center;
+}
+
+.text-drop-logo:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-text{
+    width: 100%;
+    text-align: center;
+}
+
+.drop-logo-firstrow{
+    display: flex;
+    width: 100%;
+}
+.drop-logo-secondrow{
+    display: flex;
+    width: 100%;
+}
+.drop-logo-thirdrow{
+    display: flex;
+    width: 100%;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    margin: 10px 10px 10px 10px;
+}
+
 .logo{
     display: inline-block;
     border-radius: 50%;
     background-color: white;
 }
 
-.text-logo{
+.text-nav-logo{
     font-family: 'Montserrat', serif;
     font-weight: 700;
     color: white;
