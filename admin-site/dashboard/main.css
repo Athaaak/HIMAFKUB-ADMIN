@@ -39,12 +39,20 @@
 }
 
 .drop-logo{
-    border: 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(70, 70, 70);
+    border-radius: 50%;
 }
 
 .text-drop-logo{
     text-decoration: none;
+    width: max-content;
     text-align: center;
+    color: #AD474A;
+    margin-top: 10px;
 }
 
 .text-drop-logo:hover{
@@ -55,26 +63,29 @@
 .dropdown-text{
     width: 100%;
     text-align: center;
+    color: #5D426F;
+    font-size: larger;
 }
 
 .drop-logo-firstrow{
     display: flex;
     width: 100%;
+    justify-content: center;
+    margin-top: 15px;
 }
 .drop-logo-secondrow{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .drop-logo-thirdrow{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .logo-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
     margin: 10px 10px 10px 10px;
 }
 

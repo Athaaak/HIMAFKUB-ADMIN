@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./profil.css">
     </head>
 
     <body>
@@ -142,58 +142,122 @@
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
                     
-                    <label class="header-text">BEM FK UB 2022 <br> KABINET AKSARA ASA</label>
+                    <label class="header-text">BEM FK UB 2022 <br> Menggapai Asa Menembus Cakrawala</label>
                 </div>
             </div>
-            <div class="carousel-container">
-                <div class="carousel-content">
-                    <label class="carousel-text">What's Happening in BEM FK UB?</label>
+            <div class="text-container">
+                <div class="text-content">
+                    <label class="content-text">VISI</label>
                 </div>
             </div>
-            <div class="carousel-box">
-                <div class="box-news">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#">
-                                <img src="./img-source/dummy1.jpg" class="d-block w-100" alt="...">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="./img-source/dummy2.jpg" class="d-block w-100" alt="...">
-                            </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="./img-source/dummy3.jpg" class="d-block w-100" alt="...">
-                            </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+            <div class="text-container">
+                <div class="text-content-second">
+                    <label class="content-text-second">Askara</label>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-grid">
+                    <label class="content-text-header">A</label>
+                    <div class="desc-text-header">Adaptif - Progresif</div>
+                    <div class="desc-text">
+                        Membentuk Kolegium FK UB yang terus beradaptasi aktif sehingga mampu terus bergerak ke arah yang lebih baik secara berkelanjutan
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <label class="content-text-header">S</label>
+                    <div class="desc-text-header">Sinergis</div>
+                    <div class="desc-text">
+                        Bersinergi dengan berbagai elemen Kolegium FK UB untuk memberikan dampak yang lebih besar dan lebih bermakna dalam mencapai tujuan bersama
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <label class="content-text-header">A</label>
+                    <div class="desc-text-header">Aksi Bermakna</div>
+                    <div class="desc-text">
+                        Memberikan kualitas terbaik dalam setiap aksi bermakna strategis untuk memberikan kontribusi yang bermakna untuk masyarakat luas
                     </div>
                 </div>
             </div>
-            <div class="vid-text-container">
-                <div class="vid-text">
-                    <label>Watch New Video in Kolegium FK UB</label>
+            <div class="text-container">
+                <div class="text-content-third">
+                    <label class="content-text-third">MISI</label>
                 </div>
             </div>
-            <div class="vid-container">
-                <div class="vid-content">
-                    <iframe class="video" width="960" height="600" 
-                    src="https://www.youtube.com/embed/ZqAdMky44U0">
-                    </iframe>
+            <div class="box-container">
+                <div class="row-content-first">
+                    <div class="box-content">
+                        <label class="text-content-box">Kaderasi Efektif <br> dan Inovatif</label>
+                    </div>
+                    <div class="box-content">
+                        <label class="text-content-box">Optimalisasi <br> Program Kerja</label>
+                    </div>
+                    <div class="box-content">
+                        <label class="text-content-box">Pelayanan Ideal</label>
+                    </div>
+                </div>
+                <div class="row-content-second">
+                    <div class="box-content">
+                        <label class="text-content-box">Eksalasi Prestasi</label>
+                    </div>
+                    <div class="box-content">
+                        <label class="text-content-box">Ekspansi Relasi</label>
+                    </div>
+                    <div class="box-content">
+                        <label class="text-content-box">Aksi Bermakna</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ka-text-container">
+                <div class="ka-text-box">
+                    <label class="ka-text">Kabinet Askara Asa</label>
+                </div>
+                <label class="ka-desc-text">Nama kabinet ini diambil dari bahasa Sansekerta. Adi berarti unggul serta besar dan Aksata berarti tidak terputus. Kami memilih Adiaksata sebagai nama kabinet BEM FKUB 2020 merupakan bentuk harapan kami untuk dapat membesarkan dan menjadikan Kolegium Mahasiswa FKUB menjadi Kolegium yang terus menerus unggul dalam pergerakan yang tidak terputus untuk membawa kebermanfaatan bagi masyarakat, bangsa, dan Negara. Sinergisme serta relasi baik yang tidak terputus dengan pihak internal maupun eksternal Kolegium Mahasiswa FKUB merupakan solusi yang kami berikan dalam upaya mewujudkan harapan kami ini.</label>
+            </div>
+
+            <div class="desc-container">
+                <div class="desc-logo-box">
+                    <label class="desc-box-text">Logo</label>
+                </div>
+            </div>
+            <div class="desc-container-logo">
+                <div class="desc-logo-left">
+                    <div class="desc-logo-text">
+                        <label class="header">Burung Kalibri</label>
+                        <label class="text">Mampu melakukan torpor untuk beradaptasi dan memiliki kemampuan terbang yang fleksibel sehingga menggambarkan nilai Adaptif-Progresif</label>
+                    </div>
+                    <div class="desc-logo-text">
+                        <label class="header">Hubungan antara Bunga <br> dan Kolibri</label>
+                        <label class="text">Merupakan simbiosis mutualisme yang sesuai dengan nilai Sinergis</label>
+                    </div>
+                    <div class="desc-logo-text">
+                        <label class="header">Bunga</label>
+                        <label class="text">Memiliki peran penting sebagai alat reproduksi tanaman menyimbolkan nilai Aksi Bermakna</label>
+                    </div>
+                </div>
+                <div class="logo-mid">
+                    <img src="./img-source/aksara-big.png" class="desc-content-logo">
+                </div>
+                <div class="desc-logo-right">
+                    <div class="desc-logo-text">
+                        <label class="header">5 Kelopak Warna</label>
+                        <label class="text">Menggambarkan lima program studi yang berharmoni bersama membentuk kolaborasi yang indah</label>
+                    </div>
+                    <div class="desc-logo-text">
+                        <label class="header">Warna Kuning</label>
+                        <label class="text">Melambangkan bahwa BEM FK UB akan terus memberikan energi positif, kesenangan, dan optimisme yang akan menjadi penggerak utama pelayanan kami
+                    </div>
+                    <div class="desc-logo-text">
+                        <label class="header">Warna Ungu</label>
+                        <label class="text">Melambangkan kebijaksanaan, kekuatan, dan harapan besar Kolegium Mahasiswa FK UB untuk terus memancarkan kebermanfaatan dengan segala sumber daya yang dimiliki</label>
+                    </div>
+                </div>
+            </div>
+            <div class="dg-container">
+                <div class="dg-box">
+                    <label class="dg-header">
+                        DIAGRAM ORGANISASI
+                    </label>
                 </div>
             </div>
 
