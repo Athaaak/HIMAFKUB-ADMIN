@@ -1,5 +1,13 @@
 @import url(./main.css);
 
+.navbar-brand{
+    cursor: pointer;
+}
+
+.text-nav-logo{
+    cursor: pointer;
+}
+
 .page-bg{
     height: 525vh;
 }

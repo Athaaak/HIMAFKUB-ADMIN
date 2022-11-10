@@ -10,7 +10,7 @@
         <div class="page-bg">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./main.php">
                             <img src="./img-source/aksara.png" alt="AksaraAsa" class="logo">
                             <label class="text-nav-logo">BEM ASKARA ASA <br>FK UB 2022</label>
                     </a>
