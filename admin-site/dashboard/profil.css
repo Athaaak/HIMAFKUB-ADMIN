@@ -125,16 +125,17 @@
 }
 
 .box-container{
-    display: inline-block;
+    display: flex;
     position: absolute;
-    width: 100%;
     top: 180%;
+
 }
 
 .row-content-first{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .row-content-second{
@@ -145,13 +146,13 @@
 }
 
 .box-content{
-    margin: 0 50px;
-    
+    margin: 50px 50px;
+    flex-basis: 25%;
 }
 
 .text-content-box{
     display: block;
-    background-color: #D9D9D9;
+    background-color: whitesmoke;
     padding: 40px 40px;
     font-family: 'Montserrat', serif;
     font-weight: 600;
@@ -233,7 +234,7 @@
     font-size: 20px;
     width: 100%;
     text-align: center;
-    background-color: #D9D9D9;
+    background-color: whitesmoke;
     border-radius: 15px;
     color: #5D426F;
 }

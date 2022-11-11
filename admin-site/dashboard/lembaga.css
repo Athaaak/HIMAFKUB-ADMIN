@@ -1,0 +1,118 @@
+@import url(./main.css);
+
+.navbar-brand{
+    cursor: pointer;
+}
+
+.text-nav-logo{
+    cursor: pointer;
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ot-container{
+    position: absolute;
+    top: 115%;
+    width: 100%;
+    text-align: center;
+}
+
+.ot-header{
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(70, 70, 70);
+    font-size: 30px;
+    color: #FBBC5E;
+}
+
+.ot-box-row{
+    display: flex;
+    justify-content: center;
+}
+
+.ot-content{
+    margin: 40px 40px 20px 40px;
+    padding: 15px 45px 15px 45px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ot-desc{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.st-container{
+    position: absolute;
+    top: 165%;
+    width: 100%;
+    text-align: center;
+}
+
+.st-header{
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px rgb(70, 70, 70);
+    font-size: 30px;
+    color: #FBBC5E;
+}
+
+.st-box-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.st-content{
+    margin: 40px 40px 20px 40px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    flex-basis: 25%;
+}
+
+.st-desc{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.bk-container{
+    position: absolute;
+    top: 250%;
+    width: 100%;
+    text-align: center;
+}
+
+.bk-header{
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    text-shadow: 1px 1px rgb(69, 69, 69);
+    font-size: 30px;
+    color: #5D426F;
+}
+
+.bk-box-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bk-content{
+    margin: 40px 40px 20px 40px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    flex-basis: 25%;
+}
+
+.bk-desc{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 20px;
+}

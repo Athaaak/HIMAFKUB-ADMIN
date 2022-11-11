@@ -23,7 +23,7 @@
                                 <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Lembaga & Himpunan</a>
+                                <a class="nav-link" href="./lembaga.php">Lembaga & Himpunan</a>
                                 </li>
                                 <li class="nav-item">
                                 <a class="nav-link" href="https://bemfk.ub.ac.id/eskk/">E-SKK</a>
@@ -123,7 +123,7 @@
                                 </div>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">SOP Kolegium</a>
+                                <a class="nav-link" href="./kolegium.php">SOP Kolegium</a>
                                 </li>
                                 <li class="nav-item">
                                 <a class="nav-link" href="#">Arsip</a>
@@ -194,8 +194,6 @@
                     <div class="box-content">
                         <label class="text-content-box">Pelayanan Ideal</label>
                     </div>
-                </div>
-                <div class="row-content-second">
                     <div class="box-content">
                         <label class="text-content-box">Eksalasi Prestasi</label>
                     </div>
