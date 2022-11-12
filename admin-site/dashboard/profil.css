@@ -1,5 +1,10 @@
 @import url(./main.css);
 
+.page-bg {
+  background-image: url("../../img/background.jpg");
+  height: 600vh;
+}
+
 .navbar-brand {
   cursor: pointer;
 }
@@ -89,9 +94,6 @@
   position: absolute;
   width: 100%;
   top: 130%;
-}
-
-.content-grid {
 }
 
 .content-text-header {
@@ -196,9 +198,6 @@
   top: 300%;
 }
 
-.desc-logo-box {
-}
-
 .desc-box-text {
   font-family: "Montserrat", serif;
   font-weight: 900;
@@ -218,9 +217,6 @@
 
 .desc-logo-right {
   margin: 40px;
-}
-
-.desc-logo-text {
 }
 
 .header {

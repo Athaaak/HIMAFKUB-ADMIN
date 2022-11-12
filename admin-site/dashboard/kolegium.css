@@ -1,2 +1,44 @@
 @import url(./main.css);
 
+.sop-container {
+  position: absolute;
+  top: 115%;
+  width: 100%;
+}
+
+.sop-box {
+  margin: 10px 50px;
+}
+
+.sop-header-box {
+  padding: 10px;
+  background-color: #5d426f;
+  border-radius: 15px;
+}
+
+.sop-header {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fbbc5e;
+}
+
+.sop-content-box {
+  display: grid;
+  padding: 10px;
+  background-color: #fbbc5e;
+  margin: 10px 0 0 0;
+  border-radius: 15px;
+}
+
+.sop-content {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+  color: #5d426f;
+}
+
+.sop-grid {
+  text-align: center;
+}

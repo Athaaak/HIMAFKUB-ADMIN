@@ -141,7 +141,31 @@
             <div class="content-container">
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
-                    <label class="header-text">SOP KOLEGIUM</label>
+
+                </div>
+                <label class="header-text">SOP KOLEGIUM</label>
+            </div>
+
+            <div class="sop-container">
+                <div class="sop-box">
+                    <div class="sop-header-box">
+                        <label class="sop-header">2018</label>
+                    </div>
+                    <div class="sop-content-box">
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                    </div>
+                </div>
+                <div class="sop-box">
+                    <div class="sop-header-box">
+                        <label class="sop-header">2019</label>
+                    </div>
+                    <div class="sop-content-box">
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                    </div>
                 </div>
             </div>
 
