@@ -23,8 +23,8 @@
 
                 <!-- Navbar menu-->
                 <ul class ="nav-menu float-right">
-                    <li><a href="../dashboard.php">Dashboard</a></li>
-                    <li><a href="./sop/sop.php">SOP</a></li>
+                    <li><a href="../dashboard-admin.php">Dashboard</a></li>
+                    <li><a href="">SOP</a></li>
                     <li><a href="../arsip/arsip.php">Arsip</a></li>
                     <li><a href="../artikel/artikel.php">Artikel</a></li>
                     <li><a href="../kementrian/kementrian.php">Kementrian</a></li>
@@ -75,18 +75,18 @@
                                         while($p = mysqli_fetch_array($sop)){
 
                                 ?>
-                                <tr>
-                                    <td><?= $no++ ?></td>
-                                    <td><?= $p['judul']?></td>
-                                    <td><?= $p['nama_kementrian']?></td>
-                                    <td><?= $p['link']?></td>
-                                    <td>
-                                        <a href="">Edit</a> |
-                                        <a href="">Delete</a>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td><?= $no++ ?></td>
+                                        <td><?= $p['judul']?></td>
+                                        <td><?= $p['nama_kementrian']?></td>
+                                        <td><?= $p['link_sop']?></td>
+                                        <td>
+                                            <a href="edit-sop.php?idsop=<?= $p['id_sop']?>">Edit</a> |
+                                            <a href="hapus.php?idsop=<?= $p['id_sop']?>">Delete</a>
+                                        </td>
+                                    </tr>
                                 <?php }} 
-                                    else { ?>  
+                                else { ?>  
                                     
                                     <tr>
                                         <td colspan="5">Data is missing</td>

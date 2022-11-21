@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 .page-bg {
-  background-image: url("../../img/background.jpg");
+  background-image: url("../../img/background.png");
   width: 100%;
   height: 400vh;
 }
@@ -196,10 +196,9 @@
 }
 
 .vid-content {
-  width: 60%;
   display: flex;
   position: absolute;
-  top: 245%;
+  top: 230%;
   padding: 0;
   margin: 0;
 }
@@ -214,7 +213,7 @@
   font-weight: 600;
   color: white;
   text-align: center;
-  top: 235%;
+  top: 220%;
 }
 
 .video {

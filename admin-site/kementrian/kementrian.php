@@ -23,11 +23,11 @@
 
                 <!-- Navbar menu-->
                 <ul class ="nav-menu float-right">
-                    <li><a href="../dashboard.php">Dashboard</a></li>
-                    <li><a href="./sop/sop.php">SOP</a></li>
+                    <li><a href="../dashboard-admin.php">Dashboard</a></li>
+                    <li><a href="../sop/sop.php">SOP</a></li>
                     <li><a href="../arsip/arsip.php">Arsip</a></li>
                     <li><a href="../artikel/artikel.php">Artikel</a></li>
-                    <li><a href="../kementrian/kementrian.php">Kementrian</a></li>
+                    <li><a href="">Kementrian</a></li>
                     <li><a href="#"><?= $_SESSION['uname'] ?> (<?= $_SESSION['ulevel'] ?>)</a>
 
                         <!-- Sub-menu -->
@@ -72,16 +72,16 @@
                                     if(mysqli_num_rows($sop) > 0 ){
                                         while($p = mysqli_fetch_array($sop)){
 
-                                ?>
-                                <tr>
-                                    <td><?= $no++ ?></td>
-                                    <td><?= $p['nama_kementrian']?></td>
-                                    <td>
-                                        <a href="">Edit</a> |
-                                        <a href="">Delete</a>
-                                    </td>
-                                </tr>
-                                <?php }} 
+                                            ?>
+                                            <tr>
+                                                <td><?= $no++ ?></td>
+                                                <td><?= $p['nama_kementrian']?></td>
+                                                <td>
+                                                    <a href="">Edit</a> |
+                                                    <a href="">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <?php }} 
                                     else { ?>  
                                     
                                     <tr>

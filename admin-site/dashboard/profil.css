@@ -1,8 +1,7 @@
 @import url(./main.css);
 
 .page-bg {
-  background-image: url("../../img/background.jpg");
-  height: 600vh;
+  height: 550vh;
 }
 
 .navbar-brand {
@@ -11,10 +10,6 @@
 
 .text-nav-logo {
   cursor: pointer;
-}
-
-.page-bg {
-  height: 525vh;
 }
 
 .text-container {
@@ -240,18 +235,22 @@
 }
 
 .dg-container {
-  display: flex;
   position: absolute;
   top: 385%;
   width: 100%;
-  justify-content: center;
+  text-align: center;
 }
 
 .dg-header {
   font-size: 30px;
   font-family: "Montserrat", serif;
   font-weight: 900;
-  color: #382810;
+  color: #fbbc5e;
+  padding: 20px;
+}
+.dg-foto {
+  margin: 20px 0;
+  padding: 20px;
 }
 
 .social-text-container {
@@ -282,13 +281,13 @@
   font-weight: 600;
   color: white;
   text-align: center;
-  top: 490%;
+  top: 510%;
 }
 
 .social-logo-content {
   display: flex;
   position: absolute;
-  top: 500%;
+  top: 520%;
 }
 
 .social-logo img {

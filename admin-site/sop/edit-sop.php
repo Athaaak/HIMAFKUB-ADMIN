@@ -6,6 +6,11 @@
     }
 ?>
 
+<?php 
+    $sop = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_sop = '".$_GET['idsop']."' ");
+    $p = mysqli_fetch_object($sop);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,13 +57,13 @@
             <div class="container">
                 <div class="box">
                     <div class="box-header">
-                        Tambah SOP
+                        Edit SOP
                     </div>
                     <div class="box-body">
                         <form action="" method="POST">
                             <div class="form-group">
                                 <label>Judul</label>
-                                <input type="text" name="judul" placeholder="Masukan Judul SOP Anda" class="input-control" required>
+                                <input type="text" name="judul" placeholder="Masukan Judul SOP Anda" class="input-control" value="<?= $p->judul ?>">
                                 <label>Kementrian</label>
                                 <select name="kementrian" required>
                                     <option value="">- Pilih Kementrian -</option>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./lembaga.css">
+        <link rel="stylesheet" href="./artikel.css">
     </head>
 
     <body>
@@ -10,7 +10,7 @@
         <div class="page-bg">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="./main.php">
+                    <a class="navbar-brand" href="#">
                             <img src="./img-source/aksara.png" alt="AksaraAsa" class="logo">
                             <label class="text-nav-logo">BEM ASKARA ASA <br>FK UB 2022</label>
                     </a>
@@ -138,114 +138,54 @@
 
             <!-- Content -->
 
-            <div class="content-container">
-                <div class="header-content">
-                    <img src="./img-source/aksara-big.png" class="content-logo">
-                    
-                    <label class="header-text">LEMBAGA & HIMPUNAN</label>
-                </div>
+            <div class="article-container">
+                <div class="article-box">
+                    <a class="article" href="#">
+                        <div class="photo-article">
+                            <img src="./img-source/article1.png" class="a-photo d-block" width="400px">
+                        </div>
+                        
+                        <div class="article-desc">
+                            <h1 class="a-h1">YUK PINDAH FASKES BPJS KE KLINIK UB</h1>
+                            <h4 class="a-h4">MINGGU, 28 AGUSTUS 2022 | SOSMA</h4>
+                             
+                        </div>
+                    </a>
+                    <a class="article" href="#">
+                        <div class="photo-article">
+                            <img src="./img-source/article2.png" class="a-photo d-block" width="400px">
+                        </div>
+                        
+                        <div class="article-desc">
+                            <h1 class="a-h1">EVENT REPORT FK UB MENGAJAR 2022 EKSEKUSI 2</h1>
+                            <h4 class="a-h4">SABTU, 27 AGUSTUS 2022 | SOSMA</h4>
+                             
+                        </div>
+                    </a>
+                    <a class="article" href="#">
+                        <div class="photo-article">
+                            <img src="./img-source/article3.png" class="a-photo d-block" width="400px">
+                        </div>
+                        
+                        <div class="article-desc">
+                            <h1 class="a-h1">COMING SOON BKM FK FIKES UB 2022</h1>
+                            <h4 class="a-h4">JUM’AT, 26 AGUSTUS 2022 | PSDM</h4>
+                             
+                        </div>
+                    </a>
+                    <a class="article" href="#">
+                        <img src="">
+                        <div class="article-desc">
+                            <h1 class="a-h1">Test2</h1>
+                            <h6 class="a-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                            <h4 class="a-h4">Wed, 20 Jan 2020</h4>
+                        </div>
+                    </a>
             </div>
 
-            <div class="ot-container">
-                <div class="ot-box">
-                    <label class="ot-header">LEMBAGA OTONOM</label>
-                    <div class="ot-box-row">
-                        <div class="ot-content">
-                            <img src="./img-source/LOGO BEM 1.png" width="140px" height="140px">
-                            <label class="ot-desc">BEM</label>
-                        </div>
-                        <div class="ot-content">
-                            <img src="./img-source/DPM FKUB 1.png" width="140px" height="140px">
-                            <label class="ot-desc">DPM</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="st-container">
-                <div class="st-box">
-                    <label class="st-header">LEMBAGA SEMI OTONOM</label>
-                    <div class="st-box-row">
-                        <div class="st-content">
-                            <img src="./img-source/AMSA FKUB 1.png" width="140px" height="140px">
-                            <label class="st-desc">AMSA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/logo MSCIA 1.png" width="140px" height="140px">
-                            <label class="st-desc">MSCIA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/Lakesma2 1.png" width="140px" height="140px">
-                            <label class="st-desc">LAKESMA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/Logo LKI 1 1.png" width="140px" height="140px">
-                            <label class="st-desc">LKI</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/LOGO LSIM 1.png" width="140px" height="140px">
-                            <label class="st-desc">LSIM</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/LPM 1.png" width="140px" height="140px">
-                            <label class="st-desc">LPM</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bk-container">
-                <div class="bk-box">
-                    <label class="bk-header">BADAN KHUSUS</label>
-                    <div class="bk-box-row">
-                        <div class="bk-content">
-                            <img src="./img-source/Logo HMPD 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HMPD</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/HMF 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HMF</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/ARMABI FKUB 1.png" width="140px" height="140px">
-                            <label class="bk-desc">ARMABI</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/ORMAGIKA 1.png" width="140px" height="140px">
-                            <label class="bk-desc">ORMAGIKA</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/himkajaya 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HIMKAJAYA</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Footer -->
-
-            <div class="social-text-container">
-                    <label class="social-text">VISIT BEM FK UB ON</label>
-            </div>
-            <div class="social-container">
-                <div class="social-logo-content">
-                    <div class="social-logo">
-                        <a href="#">
-                            <img src="./img-source/youtube.png" width="100" height="100">
-                        </a>
-                        <a href="#">
-                            <img src="./img-source/instagram.png" width="100" height="100">
-                        </a>
-                        <a href="#">
-                            <img src="./img-source/twitter.png" width="100" height="100">
-                        </a>
-                        <a href="#">
-                            <img src="./img-source/whatsapp.png" width="100" height="100">
-                        </a>
-                    </div>
-                </div>
-            </div>
- 
+        
         
             <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         </div>

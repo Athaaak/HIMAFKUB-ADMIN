@@ -10,7 +10,7 @@
         <div class="page-bg">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="">
                             <img src="./img-source/aksara.png" alt="AksaraAsa" class="logo">
                             <label class="text-nav-logo">BEM ASKARA ASA <br>FK UB 2022</label>
                     </a>
@@ -126,10 +126,10 @@
                                 <a class="nav-link" href="./kolegium.php">SOP Kolegium</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Arsip</a>
+                                <a class="nav-link" href="./arsip.php">Arsip</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Artikel</a>
+                                <a class="nav-link" href="./artikel.php">Artikel</a>
                                 </li>
                             </ul>
                         </div>
@@ -161,7 +161,7 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <a href="#">
-                                <img src="./img-source/dummy1.jpg" class="d-block w-100" alt="...">
+                                <img src="./img-source/dummy1.jpg" class="d-block w-100">
                                 </a>
                             </div>
                             <div class="carousel-item">
@@ -191,7 +191,7 @@
             </div>
             <div class="vid-container">
                 <div class="vid-content">
-                    <iframe class="video" width="960" height="600" 
+                    <iframe class="video" width="1080" height="720" 
                     src="https://www.youtube.com/embed/ZqAdMky44U0">
                     </iframe>
                 </div>

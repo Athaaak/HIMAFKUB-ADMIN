@@ -17,7 +17,7 @@
     <div class="page-login">
         <form action="" method="POST">
             <div class="box">
-                <div class="header-text">HIMAFKUB-ADMIN</div>
+                <div class="header-text">BEMFKUB-ADMIN</div>
                 <div class="box-body">
                         <label>Masukkan Username</label>
                         <div class="form-field">
@@ -29,7 +29,6 @@
                             <input type="password" name="pass" placeholder="Password" required/>
                         </div>
                         <div class="form-field-button">
-                            <button class="btn-register" name="register" type="registers">Register</button>
                             <button class="btn-login" name="submit" type="submit">Log in</button>
                         </div>
                 </form>
@@ -49,7 +48,7 @@
                                 $_SESSION['uname'] = $ada ->nama;
                                 $_SESSION['ulevel'] = $ada ->level;
 
-                                echo "<script>window.location = 'admin-site/dashboard.php' </script>";
+                                echo "<script>window.location = 'admin-site/dashboard-admin.php' </script>";
                             }
                             else{
                                 echo "Password salah.";

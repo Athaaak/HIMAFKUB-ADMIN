@@ -1,8 +1,19 @@
 @import url(./main.css);
 
+.page-bg {
+  height: 500vh;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .sop-container {
   position: absolute;
-  top: 115%;
+  top: 100%;
   width: 100%;
 }
 
@@ -11,6 +22,7 @@
 }
 
 .sop-header-box {
+  margin: 10px 0;
   padding: 10px;
   background-color: #5d426f;
   border-radius: 15px;
@@ -41,4 +53,41 @@
 
 .sop-grid {
   text-align: center;
+}
+
+.social-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-content {
+  display: flex;
+  position: absolute;
+  top: 450%;
+  padding: 0;
+  margin: 0;
+}
+
+.social-text {
+  font-family: "Montserrat", serif;
+  position: absolute;
+  width: 100%;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  top: 470%;
+}
+
+.social-logo-content {
+  display: flex;
+  position: absolute;
+  top: 480%;
 }

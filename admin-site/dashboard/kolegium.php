@@ -1,3 +1,7 @@
+<!-- <?= 
+    include '../../koneksi.php';
+?> -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -126,10 +130,10 @@
                                 <a class="nav-link" href="./kolegium.php">SOP Kolegium</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Arsip</a>
+                                <a class="nav-link" href="./arsip.php">Arsip</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Artikel</a>
+                                <a class="nav-link" href="./artikel.php">Artikel</a>
                                 </li>
                             </ul>
                         </div>
@@ -141,33 +145,47 @@
             <div class="content-container">
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
-
+                    
+                    <label class="header-text">SOP KOLEGIUM</label>
                 </div>
-                <label class="header-text">SOP KOLEGIUM</label>
             </div>
 
             <div class="sop-container">
                 <div class="sop-box">
-                    <div class="sop-header-box">
-                        <label class="sop-header">2018</label>
-                    </div>
-                    <div class="sop-content-box">
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                    </div>
-                </div>
-                <div class="sop-box">
-                    <div class="sop-header-box">
-                        <label class="sop-header">2019</label>
-                    </div>
-                    <div class="sop-content-box">
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                    </div>
+                                <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_kementrian ORDER BY id_kementrian DESC");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                            ?>
+                                                <div class="sop-header-box">
+                                                    <label class="sop-header"><?= $p['nama_kementrian']?></label>
+                                                </div>
+
+                                                <div class="sop-content-box">
+                                                    <a href="#" class="sop-content">Test</a>
+                                                    <a href="#" class="sop-content">Test</a>
+                                                    <a href="#" class="sop-content">Test</a>
+                                                </div>
+                                                
+                                            <?php }} 
+                                    else { ?>  
+                                    
+                                    <tr>
+                                        <td colspan="5">Data is missing</td>
+                                    </tr>
+                                    
+                                    <?php }
+                                    
+                                ?>
                 </div>
             </div>
+            
+            <!-- <div class="sop-content-box">
+                <a href="#" class="sop-content">Test</a>
+                <a href="#" class="sop-content">Test</a>
+                <a href="#" class="sop-content">Test</a>
+            </div> -->
 
             <!-- Footer -->
 

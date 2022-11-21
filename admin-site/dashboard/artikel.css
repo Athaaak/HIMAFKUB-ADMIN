@@ -1,0 +1,70 @@
+@import url(./main.css);
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 125px 100px 125px;
+  background-color: #fbbc5e;
+}
+
+.article-box {
+  margin: 10px;
+  display: grid;
+}
+
+.article {
+  display: flex;
+  flex-basis: 50%;
+  margin: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #a47b3e;
+}
+
+.article-desc {
+  margin: 20px;
+  display: grid;
+  padding: 0 0 20px 0;
+}
+
+.photo-article {
+  padding: 10px;
+  display: flex;
+  width: 25% auto;
+}
+
+.a-photo {
+  margin: 20px 10px 20px 10px;
+  border-radius: 20px;
+}
+
+.a-h1 {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+}
+
+.a-h4 {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+}
+
+.a-label {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+}

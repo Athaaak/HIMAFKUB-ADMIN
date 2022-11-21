@@ -126,10 +126,10 @@
                                 <a class="nav-link" href="./kolegium.php">SOP Kolegium</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Arsip</a>
+                                <a class="nav-link" href="./arsip.php">Arsip</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#">Artikel</a>
+                                <a class="nav-link" href="./artikel.php">Artikel</a>
                                 </li>
                             </ul>
                         </div>
@@ -256,6 +256,9 @@
                     <label class="dg-header">
                         DIAGRAM ORGANISASI
                     </label>
+                </div>
+                <div class="dg-foto">
+                    <img src="./img-source/dummy2.jpg" width="1080" height="720">
                 </div>
             </div>
 

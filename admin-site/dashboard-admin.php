@@ -18,11 +18,11 @@
             <div class="container">
                 
                 <!-- Navbar logo-->
-                <h2 class="nav-logo float-left">HIMAFKUB-ADMIN</h2>
+                <h2 class="nav-logo float-left">BEMFKUB-ADMIN</h2>
 
                 <!-- Navbar menu-->
                 <ul class ="nav-menu float-right">
-                    <li><a href="./dashboard/main.php">Dashboard</a></li>
+                    <li><a href="./dashboard/main.php">Main Website</a></li>
                     <li><a href="./sop/sop.php">SOP</a></li>
                     <li><a href="./arsip/arsip.php">Arsip</a></li>
                     <li><a href="./artikel/artikel.php">Artikel</a></li>

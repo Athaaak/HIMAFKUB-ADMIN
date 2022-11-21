@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./lembaga.css">
+        <link rel="stylesheet" href="./arsip.css">
     </head>
 
     <body>
@@ -142,82 +142,29 @@
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
                     
-                    <label class="header-text">LEMBAGA & HIMPUNAN</label>
+                    <label class="header-text">ARSIP</label>
                 </div>
             </div>
 
-            <div class="ot-container">
-                <div class="ot-box">
-                    <label class="ot-header">LEMBAGA OTONOM</label>
-                    <div class="ot-box-row">
-                        <div class="ot-content">
-                            <img src="./img-source/LOGO BEM 1.png" width="140px" height="140px">
-                            <label class="ot-desc">BEM</label>
-                        </div>
-                        <div class="ot-content">
-                            <img src="./img-source/DPM FKUB 1.png" width="140px" height="140px">
-                            <label class="ot-desc">DPM</label>
-                        </div>
+            <div class="sop-container">
+                <div class="sop-box">
+                    <div class="sop-header-box">
+                        <label class="sop-header">2018</label>
+                    </div>
+                    <div class="sop-content-box">
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="st-container">
-                <div class="st-box">
-                    <label class="st-header">LEMBAGA SEMI OTONOM</label>
-                    <div class="st-box-row">
-                        <div class="st-content">
-                            <img src="./img-source/AMSA FKUB 1.png" width="140px" height="140px">
-                            <label class="st-desc">AMSA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/logo MSCIA 1.png" width="140px" height="140px">
-                            <label class="st-desc">MSCIA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/Lakesma2 1.png" width="140px" height="140px">
-                            <label class="st-desc">LAKESMA</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/Logo LKI 1 1.png" width="140px" height="140px">
-                            <label class="st-desc">LKI</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/LOGO LSIM 1.png" width="140px" height="140px">
-                            <label class="st-desc">LSIM</label>
-                        </div>
-                        <div class="st-content">
-                            <img src="./img-source/LPM 1.png" width="140px" height="140px">
-                            <label class="st-desc">LPM</label>
-                        </div>
+                <div class="sop-box">
+                    <div class="sop-header-box">
+                        <label class="sop-header">2019</label>
                     </div>
-                </div>
-            </div>
-
-            <div class="bk-container">
-                <div class="bk-box">
-                    <label class="bk-header">BADAN KHUSUS</label>
-                    <div class="bk-box-row">
-                        <div class="bk-content">
-                            <img src="./img-source/Logo HMPD 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HMPD</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/HMF 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HMF</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/ARMABI FKUB 1.png" width="140px" height="140px">
-                            <label class="bk-desc">ARMABI</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/ORMAGIKA 1.png" width="140px" height="140px">
-                            <label class="bk-desc">ORMAGIKA</label>
-                        </div>
-                        <div class="bk-content">
-                            <img src="./img-source/himkajaya 1.png" width="140px" height="140px">
-                            <label class="bk-desc">HIMKAJAYA</label>
-                        </div>
+                    <div class="sop-content-box">
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
+                        <a href="#" class="sop-content">Test</a>
                     </div>
                 </div>
             </div>
