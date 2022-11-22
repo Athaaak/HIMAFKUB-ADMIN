@@ -32,6 +32,7 @@
 
                         <!-- Sub-menu -->
                         <ul class="dropdown">
+                            <li><a href="user.php">User</a></li>
                             <li><a href="../logout.php">Log Out</a></li>
                         </ul>
                     </li>

@@ -1,3 +1,7 @@
+<!-- <?= 
+    include '../../koneksi.php';
+?> -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -148,25 +152,212 @@
 
             <div class="sop-container">
                 <div class="sop-box">
-                    <div class="sop-header-box">
-                        <label class="sop-header">2018</label>
+                <div class="sop-header-box">
+                                    <label class="sop-header">2018</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 1 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
                     </div>
-                    <div class="sop-content-box">
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2019</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 2 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2020</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 3 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2021</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 4 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2022</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 5 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2023</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 6 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                                    <label class="sop-header">2024</label>
+                                    <?php 
+                                    $no = 1;
+                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 7 ORDER BY id_arsip");
+                                    if(mysqli_num_rows($arsip) > 0 ){
+                                        while($p = mysqli_fetch_array($arsip)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
+
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
                     </div>
                 </div>
-                <div class="sop-box">
-                    <div class="sop-header-box">
-                        <label class="sop-header">2019</label>
-                    </div>
-                    <div class="sop-content-box">
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                        <a href="#" class="sop-content">Test</a>
-                    </div>
                 </div>
+                
             </div>
 
             <!-- Footer -->
