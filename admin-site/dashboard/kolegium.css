@@ -91,3 +91,8 @@
   position: absolute;
   top: 480%;
 }
+
+.missing {
+  font-family: "Montserrat", serif;
+  color: white;
+}

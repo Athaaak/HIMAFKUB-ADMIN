@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>Admin Site HIMAFKUB</title>
-        <link rel="stylesheet" type="text/css" href="./kementrian.css">
+        <link rel="stylesheet" type="text/css" href="./user.css">
     </head>
 
     <body class="bg-color">
@@ -24,15 +24,15 @@
                 <!-- Navbar menu-->
                 <ul class ="nav-menu float-right">
                     <li><a href="../dashboard-admin.php">Dashboard</a></li>
-                    <li><a href="../sop/sop.php">SOP</a></li>
+                    <li><a href="">SOP</a></li>
                     <li><a href="../arsip/arsip.php">Arsip</a></li>
                     <li><a href="../artikel/artikel.php">Artikel</a></li>
-                    <li><a href="">Kementrian</a></li>
+                    <li><a href="../kementrian/kementrian.php">Kementrian</a></li>
                     <li><a href="#"><?= $_SESSION['uname'] ?> (<?= $_SESSION['ulevel'] ?>)</a>
 
                         <!-- Sub-menu -->
                         <ul class="dropdown">
-                            <li><a href="./user/user.php">User</a></li>
+                            <li><a href="">User</a></li>
                             <li><a href="../logout.php">Log Out</a></li>
                         </ul>
                     </li>
@@ -44,7 +44,7 @@
 
     <head>
         <title>Admin Site HIMAFKUB</title>
-        <link rel="stylesheet" type="text/css" href="./sop.css">
+        <link rel="stylesheet" type="text/css" href="./user.css">
     </head>
 
      <!-- Content -->
@@ -52,37 +52,40 @@
             <div class="container">
                 <div class="box">
                     <div class="box-header">
-                        Kementrian
+                        Pengguna
                     </div>
                     <div class="box-body">
 
-                        <a href="tambah-sop.php">Tambah</a>
+                        <a href="tambah-user.php">Tambah</a>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Kementrian</th>
+                                    <th>Nama</th>
+                                    <th>Username</th>
+                                    <th>Level</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php 
                                     $no = 1;
-                                    $sop = mysqli_query($conn, "SELECT * FROM tb_kementrian ORDER BY id_kementrian DESC");
-                                    if(mysqli_num_rows($sop) > 0 ){
-                                        while($p = mysqli_fetch_array($sop)){
+                                    $acc = mysqli_query($conn, "SELECT * FROM tb_admin ORDER BY id DESC");
+                                    if(mysqli_num_rows($acc) > 0 ){
+                                        while($p = mysqli_fetch_array($acc)){
 
-                                            ?>
-                                            <tr>
-                                                <td><?= $no++ ?></td>
-                                                <td><?= $p['nama_kementrian']?></td>
-                                                <td>
-                                                    <a href="">Edit</a> |
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <?php }} 
-                                    else { ?>  
+                                ?>
+                                    <tr>
+                                        <td><?= $no++ ?></td>
+                                        <td><?= $p['nama']?></td>
+                                        <td><?= $p['username']?></td>
+                                        <td><?= $p['level']?></td>
+                                        <td>
+                                            <a href="hapus.php?id=<?= $p['id']?>">Delete</a>
+                                        </td>
+                                    </tr>
+                                <?php }} 
+                                else { ?>  
                                     
                                     <tr>
                                         <td colspan="5">Data is missing</td>

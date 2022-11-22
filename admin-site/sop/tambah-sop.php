@@ -32,7 +32,6 @@
 
                         <!-- Sub-menu -->
                         <ul class="dropdown">
-                            <li><a href="#">Ubah Password</a></li>
                             <li><a href="../logout.php">Log Out</a></li>
                         </ul>
                     </li>
@@ -62,19 +61,13 @@
                                 <label>Kementrian</label>
                                 <select name="kementrian" required>
                                     <option value="">- Pilih Kementrian -</option>
-                                    <option value="Pandora">Pandora</option>
-                                    <option value="PSDM">PSDM</option>
-                                    <option value="Dagri">Dagri</option>
-                                    <option value="Biro Litbang">Biro Litbang</option>
-                                    <option value="Satuan Pengawas Internal">Satuan Pengawas Internal</option>
-                                    <option value="Medsi">Medsi</option>
-                                    <option value="Lugri">Lugri</option>
-                                    <option value="Seniora">Seniora</option>
-                                    <option value="Karinov">Karinov</option>
-                                    <option value="Sosma">Sosma</option>
-                                    <option value="LH">LH</option>
-                                    <option value="Akspro">Akspro</option>
-                                    <option value="Biro Admin">Biro Admin</option>
+                                    <?php 
+                                    $sop = mysqli_query($conn, "SELECT * FROM tb_kementrian ORDER BY id_kementrian DESC");
+                                    if (mysqli_num_rows($sop)) { ?>
+                                        <?php while ($row_kat = mysqli_fetch_array($sop)) { ?>
+                                            <option value="<?php echo $row_kat["id_kementrian"]; ?>"><?php echo $row_kat["nama_kementrian"]; ?></option>
+                                        <?php } ?>
+                                    <?php  } ?>
                                 </select>
                                 <label>Link</label>
                                 <input type="text" name="link_sop" placeholder="Masukan Link" class="input-control" required>

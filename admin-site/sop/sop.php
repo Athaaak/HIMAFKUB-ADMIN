@@ -32,7 +32,7 @@
 
                         <!-- Sub-menu -->
                         <ul class="dropdown">
-                            <li><a href="#">Ubah Password</a></li>
+                            <li><a href="./user/user.php">User</a></li>
                             <li><a href="../logout.php">Log Out</a></li>
                         </ul>
                     </li>
@@ -70,7 +70,7 @@
                             <tbody>
                                 <?php 
                                     $no = 1;
-                                    $sop = mysqli_query($conn, "SELECT * FROM tb_sop ORDER BY id_sop DESC");
+                                    $sop = mysqli_query($conn, "SELECT * FROM tb_sop, tb_kementrian WHERE tb_sop.id_kementrian = tb_kementrian.id_kementrian ORDER BY id_sop DESC");
                                     if(mysqli_num_rows($sop) > 0 ){
                                         while($p = mysqli_fetch_array($sop)){
 

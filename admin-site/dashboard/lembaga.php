@@ -71,7 +71,7 @@
                                             <div class="logo-box">
                                                 <a href="#">
                                                 <img src="./img-source/SPI.png" alt="" class="drop-logo" width="75" height="75">
-                                                    <label class="text-drop-logo">Satuan Pengawas<br> Pendengar</label>
+                                                    <label class="text-drop-logo">Satuan Pengawas<br> Internal</label>
                                                 </a>
                                             </div>
                                             <div class="logo-box">

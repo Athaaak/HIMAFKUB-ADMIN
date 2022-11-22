@@ -75,7 +75,7 @@
                                             <div class="logo-box">
                                                 <a href="#">
                                                 <img src="./img-source/SPI.png" alt="" class="drop-logo" width="75" height="75">
-                                                    <label class="text-drop-logo">Satuan Pengawas<br> Pendengar</label>
+                                                    <label class="text-drop-logo">Satuan Pengawas<br> Internal</label>
                                                 </a>
                                             </div>
                                             <div class="logo-box">
@@ -152,40 +152,362 @@
 
             <div class="sop-container">
                 <div class="sop-box">
-                                <?php 
+                    <div class="sop-header-box">
+                                    <img src="./img-source/KEMENTERIAN AKSPRO.png" width="75" height="75">
+                                    <label class="sop-header">Akspro</label>
+                                    <?php 
                                     $no = 1;
-                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_kementrian ORDER BY id_kementrian DESC");
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 13 ORDER BY id_sop");
                                     if(mysqli_num_rows($kementrian) > 0 ){
                                         while($p = mysqli_fetch_array($kementrian)){
-                                            ?>
-                                                <div class="sop-header-box">
-                                                    <label class="sop-header"><?= $p['nama_kementrian']?></label>
-                                                </div>
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            
+                                        </div>
 
-                                                <div class="sop-content-box">
-                                                    <a href="#" class="sop-content">Test</a>
-                                                    <a href="#" class="sop-content">Test</a>
-                                                    <a href="#" class="sop-content">Test</a>
-                                                </div>
-                                                
-                                            <?php }} 
+                                        
+                                                                    
+                                        <?php }} 
                                     else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/BIRO ADMIN.png" width="75" height="75">
+                                    <label class="sop-header">Biro Admin</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 1 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
                                     
-                                    <tr>
-                                        <td colspan="5">Data is missing</td>
-                                    </tr>
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN PANDORA.png" width="75" height="75">
+                                    <label class="sop-header">Pandora</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 2 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
                                     
-                                    <?php }
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN PSDM.png" width="75" height="75">
+                                    <label class="sop-header">PSDM</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 3 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
                                     
-                                ?>
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN DAGRI.png" width="75" height="75">
+                                    <label class="sop-header">Dagri</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 4 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/BIRO LITBANG.png" width="75" height="75">
+                                    <label class="sop-header">Biro Litbang</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 5 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/SPI.png" width="75" height="75">
+                                    <label class="sop-header">Satuan Pengawas Internal</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 6 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN MEDSI.png" width="75" height="75">
+                                    <label class="sop-header">Medsi</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 7 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN LUGRI.png" width="75" height="75">
+                                    <label class="sop-header">Lugri</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 8 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN SENIORA.png" width="75" height="75">
+                                    <label class="sop-header">Seniora</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 9 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN KARINOV.png" width="75" height="75">
+                                    <label class="sop-header">Karinov</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 10 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN SOSMA.png" width="75" height="75">
+                                    <label class="sop-header">Sosma</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 11 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN LH.png" width="75" height="75">
+                                    <label class="sop-header">LH</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 12 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="#" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
                 </div>
             </div>
-            
-            <!-- <div class="sop-content-box">
-                <a href="#" class="sop-content">Test</a>
-                <a href="#" class="sop-content">Test</a>
-                <a href="#" class="sop-content">Test</a>
-            </div> -->
 
             <!-- Footer -->
 

@@ -31,7 +31,7 @@
 
                         <!-- Sub-menu -->
                         <ul class="dropdown">
-                            <li><a href="#">Ubah Password</a></li>
+                            <li><a href="./user/user.php">User</a></li>
                             <li><a href="./logout.php">Log Out</a></li>
                         </ul>
                     </li>
