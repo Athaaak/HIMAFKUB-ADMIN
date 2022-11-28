@@ -191,7 +191,8 @@
 }
 
 .carousel-inner {
-  border-radius: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .vid-content {
