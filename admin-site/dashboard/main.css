@@ -183,12 +183,11 @@
 }
 
 .box-news {
-  width: 60%;
+  width: 40%;
   position: absolute;
   border-radius: 25px;
   top: 120%;
   margin: 0;
-  background-color: rgb(146, 146, 146);
 }
 
 .carousel-inner {

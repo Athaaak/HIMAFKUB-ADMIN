@@ -1,3 +1,7 @@
+<!-- <?= 
+    include '../../koneksi.php';
+?> -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -159,18 +163,19 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#">
-                                <img src="./img-source/dummy1.jpg" class="d-block w-100">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="./img-source/dummy2.jpg" class="d-block w-100" alt="...">
-                            </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#"><img src="./img-source/dummy3.jpg" class="d-block w-100" alt="...">
-                            </a>
+                        <?php 
+                            $artikel = mysqli_query($conn, "SELECT * FROM tb_artikel ORDER BY id DESC");
+                                if (mysqli_num_rows($artikel)) { ?>
+                                        
+                                <?php while ($row_kat = mysqli_fetch_array($artikel)) { ?>
+                                    <div class="carousel-item active">
+                                        <a href="artikel-view.php?idartikel=<?= $row_kat['id']?>">
+                                        <img src="../artikel/img/<?= $row_kat['gambar_berita']; ?>" class="d-block w-100">
+                                        </a>
+                                    </div>
+                                    <?php } ?>
+                         <?php  } ?>
+                            
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

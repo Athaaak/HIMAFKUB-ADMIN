@@ -1,0 +1,57 @@
+@import url(./main.css);
+
+.article-container {
+  justify-content: center;
+  margin: 8vh 15vh 0 15vh;
+  border-radius: 10px;
+}
+
+.judul-article {
+  margin: 5vh 10vh;
+  padding-top: 5vh;
+}
+
+.foto-article {
+  margin: 5vh 10vh;
+}
+
+.content-article {
+  margin: 5vh 0vh;
+}
+
+.header {
+  margin: 0 0 10vh 0;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.date {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.content {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 7vh;
+  line-break: auto;
+  color: black;
+}
+
+.d-block {
+  padding: 0 0 0 0;
+  margin: 7vh 0;
+}
+
+.box-news {
+  position: relative;
+  justify-content: center;
+}
+
+.carousel-box {
+  display: flex;
+}

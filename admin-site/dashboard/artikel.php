@@ -1,3 +1,7 @@
+<!-- <?= 
+    include '../../koneksi.php';
+?> -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +14,7 @@
         <div class="page-bg">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./main.php">
                             <img src="./img-source/aksara.png" alt="AksaraAsa" class="logo">
                             <label class="text-nav-logo">BEM ASKARA ASA <br>FK UB 2022</label>
                     </a>
@@ -140,7 +144,7 @@
 
             <div class="article-container">
                 <div class="article-box">
-                    <a class="article" href="#">
+                    <!-- <a class="article" href="#">
                         <div class="photo-article">
                             <img src="./img-source/article1.png" class="a-photo d-block" width="400px">
                         </div>
@@ -150,37 +154,39 @@
                             <h4 class="a-h4">MINGGU, 28 AGUSTUS 2022 | SOSMA</h4>
                              
                         </div>
-                    </a>
-                    <a class="article" href="#">
-                        <div class="photo-article">
-                            <img src="./img-source/article2.png" class="a-photo d-block" width="400px">
-                        </div>
-                        
-                        <div class="article-desc">
-                            <h1 class="a-h1">EVENT REPORT FK UB MENGAJAR 2022 EKSEKUSI 2</h1>
-                            <h4 class="a-h4">SABTU, 27 AGUSTUS 2022 | SOSMA</h4>
-                             
-                        </div>
-                    </a>
-                    <a class="article" href="#">
-                        <div class="photo-article">
-                            <img src="./img-source/article3.png" class="a-photo d-block" width="400px">
-                        </div>
-                        
-                        <div class="article-desc">
-                            <h1 class="a-h1">COMING SOON BKM FK FIKES UB 2022</h1>
-                            <h4 class="a-h4">JUM’AT, 26 AGUSTUS 2022 | PSDM</h4>
-                             
-                        </div>
-                    </a>
-                    <a class="article" href="#">
-                        <img src="">
-                        <div class="article-desc">
-                            <h1 class="a-h1">Test2</h1>
-                            <h6 class="a-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
-                            <h4 class="a-h4">Wed, 20 Jan 2020</h4>
-                        </div>
-                    </a>
+                    </a> -->
+                    <?php 
+                                    $no = 1;
+                                    $artikel = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_kementrian WHERE tb_artikel.id_kategori = tb_kementrian.id_kementrian ORDER BY id DESC");
+                                    if(mysqli_num_rows($artikel) > 0 ){
+                                        while($p = mysqli_fetch_array($artikel)){
+                                        ?>  
+                                        
+                                        <a class="article" href="artikel-view.php?idartikel=<?= $p['id']?>">
+                                            <div class="photo-article">
+                                                <img src="../artikel/img/<?= $p['gambar_berita']; ?>" class="a-photo d-block" width="400px">
+                                            </div>
+                                            
+                                            <div class="article-desc">
+                                                <h1 class="a-h1"><?= $p['judul']; ?></h1>
+                                                <h4 class="a-h4"><?= $p['created_at']; ?> | <?= $p['nama_kementrian']; ?></h4>
+                                                
+                                            </div>
+                                        </a>
+                                        
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
             </div>
 
 

@@ -68,6 +68,7 @@
                                 <select name="kategori" required>
                                     <option value="">- Pilih Kategori -</option>
                                     <?php 
+                                    $no = 1;
                                     $artikel = mysqli_query($conn, "SELECT * FROM tb_kementrian ORDER BY id_kementrian ASC");
                                     if (mysqli_num_rows($artikel)) { ?>
                                         <?php while ($row_kat = mysqli_fetch_array($artikel)) { ?>
@@ -117,7 +118,7 @@
                                     $isiberita  =   $_POST['isi_berita'];
                                 
                                     $update = mysqli_query($conn, "UPDATE tb_artikel SET
-                                    id = null,
+                                    id = '".$no++."',
                                     id_kategori = '".$kategori."',
                                     judul = '".$judul."',
                                     gambar_berita = '".$rename."',

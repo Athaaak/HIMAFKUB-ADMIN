@@ -1,9 +1,14 @@
 @import url(./main.css);
 
+.page-bg {
+  height: auto;
+  padding: 0 0 100px 0;
+}
+
 .article-container {
   display: flex;
   justify-content: center;
-  margin: 100px 125px 100px 125px;
+  margin: 100px 125px 0 125px;
   background-color: #fbbc5e;
 }
 

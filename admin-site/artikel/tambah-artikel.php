@@ -81,8 +81,6 @@
                         <?php 
                             if(isset($_POST['submit'])){
 
-                                // print_r($_FILES['gambar']);
-
                                 $filename = $_FILES['gambar']['name'];
                                 $tmpname = $_FILES['gambar']['tmp_name'];
                                 $filesize = $_FILES['gambar']['size'];
