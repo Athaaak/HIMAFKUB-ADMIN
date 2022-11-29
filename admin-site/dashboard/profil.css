@@ -166,7 +166,7 @@
   font-family: "Montserrat", serif;
   font-weight: 900;
   font-size: 50px;
-  color: #382810;
+  color: #FBBC5E;
 }
 
 .ka-desc-text {
@@ -301,7 +301,12 @@
 
 .down {
   top: 45%;
-  width: fit-content;
-  font-size: 50px;
-  margin: -5px -20px;
+  font-size: 60px;
+  width: max-content;
 }
+
+.header-content{
+  display: flex;
+  justify-content: center;
+}
+

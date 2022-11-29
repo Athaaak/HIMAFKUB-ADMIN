@@ -197,7 +197,7 @@
             <div class="vid-container">
                 <div class="vid-content">
                     <iframe class="video" width="1080" height="720" 
-                    src="https://www.youtube.com/embed/ZqAdMky44U0">
+                    src="https://www.youtube-nocookie.com/embed/vEEYv_NgZHA">
                     </iframe>
                 </div>
             </div>
@@ -210,17 +210,17 @@
             <div class="social-container">
                 <div class="social-logo-content">
                     <div class="social-logo">
-                        <a href="#">
+                        <a href="https://www.youtube.com/@hjvfkjvjbvjhvkv ">
                             <img src="./img-source/youtube.png" width="100" height="100">
                         </a>
-                        <a href="#">
+                        <a href="https://instagram.com/bemfkub?igshid=ZmVmZTY5ZGE=">
                             <img src="./img-source/instagram.png" width="100" height="100">
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/bemfkub?t=fY1yYeA7yV6R6Unv1hmWLQ&s=09">
                             <img src="./img-source/twitter.png" width="100" height="100">
                         </a>
-                        <a href="#">
-                            <img src="./img-source/whatsapp.png" width="100" height="100">
+                        <a href="https://open.spotify.com/show/4zeoWd0StssNs0ZLXl2JFw?si=5b3a523f5af94d0c">
+                            <img src="./img-source/spotify.png" width="100" height="100">
                         </a>
                     </div>
                 </div>

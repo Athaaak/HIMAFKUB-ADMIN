@@ -21,7 +21,6 @@
   display: flex;
   flex-basis: 50%;
   margin: 10px;
-  border-radius: 20px;
   text-decoration: none;
   background-color: #a47b3e;
 }
@@ -40,7 +39,6 @@
 
 .a-photo {
   margin: 20px 10px 20px 10px;
-  border-radius: 20px;
 }
 
 .a-h1 {
@@ -59,10 +57,10 @@
   align-items: flex-end;
   font-family: "Montserrat", serif;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 30px;
   margin: 10px;
   text-align: justify;
-  color: white;
+  color: #382810;
 }
 
 .a-label {
