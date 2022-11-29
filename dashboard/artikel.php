@@ -1,11 +1,11 @@
 <!-- <?= 
-    include '../../koneksi.php';
-?> -->
+    include '../koneksi.php';
+    ?> -->
 
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./artikel.css">
     </head>
 
@@ -164,7 +164,7 @@
                                         
                                         <a class="article" href="artikel-view.php?idartikel=<?= $p['id']?>">
                                             <div class="photo-article">
-                                                <img src="../artikel/img/<?= $p['gambar_berita']; ?>" class="a-photo d-block" width="400px">
+                                                <img src="../admin-site/artikel/img/<?= $p['gambar_berita']; ?>" class="a-photo d-block" width="400px">
                                             </div>
                                             
                                             <div class="article-desc">
@@ -194,7 +194,7 @@
             
         
         
-            <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         </div>
     </body>
 </html>

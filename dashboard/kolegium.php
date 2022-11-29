@@ -1,12 +1,12 @@
 <!-- <?= 
-    include '../../koneksi.php';
-?> -->
+    include '../koneksi.php';
+    ?> -->
 
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./arsip.css">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./kolegium.css">
     </head>
 
     <body>
@@ -146,27 +146,55 @@
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
                     
-                    <label class="header-text">ARSIP</label>
+                    <label class="header-text">SOP KOLEGIUM</label>
                 </div>
             </div>
 
             <div class="sop-container">
                 <div class="sop-box">
-                <div class="sop-header-box">
-                                    <label class="sop-header">2018</label>
+                    <div class="sop-header-box">
+                                    <img src="./img-source/KEMENTERIAN AKSPRO.png" width="75" height="75">
+                                    <label class="sop-header">Akspro</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 1 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 13 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                             
                                         </div>
 
                                         
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/BIRO ADMIN.png" width="75" height="75">
+                                    <label class="sop-header">Biro Admin</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 1 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
                                                                     
                                         <?php }} 
                                     else { ?>  
@@ -182,25 +210,23 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2019</label>
+                    <img src="./img-source/KEMENTERIAN PANDORA.png" width="75" height="75">
+                                    <label class="sop-header">Pandora</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 2 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 2 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -211,25 +237,23 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2020</label>
+                    <img src="./img-source/KEMENTERIAN PSDM.png" width="75" height="75">
+                                    <label class="sop-header">PSDM</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 3 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 3 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -240,25 +264,23 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2021</label>
+                    <img src="./img-source/KEMENTERIAN DAGRI.png" width="75" height="75">
+                                    <label class="sop-header">Dagri</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 4 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 4 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -269,25 +291,23 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2022</label>
+                    <img src="./img-source/BIRO LITBANG.png" width="75" height="75">
+                                    <label class="sop-header">Biro Litbang</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 5 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 5 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -298,25 +318,23 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2023</label>
+                    <img src="./img-source/SPI.png" width="75" height="75">
+                                    <label class="sop-header">Satuan Pengawas Internal</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 6 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 6 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -327,25 +345,158 @@
                         ?>
                     </div>
                     <div class="sop-header-box">
-                                    <label class="sop-header">2024</label>
+                    <img src="./img-source/KEMENTERIAN MEDSI.png" width="75" height="75">
+                                    <label class="sop-header">Medsi</label>
                                     <?php 
                                     $no = 1;
-                                    $arsip = mysqli_query($conn, "SELECT * FROM tb_arsip WHERE id_tahun = 7 ORDER BY id_arsip");
-                                    if(mysqli_num_rows($arsip) > 0 ){
-                                        while($p = mysqli_fetch_array($arsip)){
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 7 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
                                         ?>  
                                     
                                         <div class="sop-content-box">
-                                            <a href="<?= $p["link"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
-                                            
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
                                         </div>
-
-                                        
                                                                     
                                         <?php }} 
                                     else { ?>  
                                                         
-                                <tr>
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN LUGRI.png" width="75" height="75">
+                                    <label class="sop-header">Lugri</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 8 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN SENIORA.png" width="75" height="75">
+                                    <label class="sop-header">Seniora</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 9 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN KARINOV.png" width="75" height="75">
+                                    <label class="sop-header">Karinov</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 10 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN SOSMA.png" width="75" height="75">
+                                    <label class="sop-header">Sosma</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 11 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
+                                    <div class="missing">
+                                        <td colspan="5">Data masih kosong.</td>
+                                    </div>
+                                </tr>
+                                                        
+                            <?php }
+                                                        
+                        ?>
+                    </div>
+                    <div class="sop-header-box">
+                    <img src="./img-source/KEMENTERIAN LH.png" width="75" height="75">
+                                    <label class="sop-header">LH</label>
+                                    <?php 
+                                    $no = 1;
+                                    $kementrian = mysqli_query($conn, "SELECT * FROM tb_sop WHERE id_kementrian = 12 ORDER BY id_sop");
+                                    if(mysqli_num_rows($kementrian) > 0 ){
+                                        while($p = mysqli_fetch_array($kementrian)){
+                                        ?>  
+                                    
+                                        <div class="sop-content-box">
+                                            <a href="<?= $p["link_sop"] ?>" class="sop-content"><?= $p["judul"] ?> | <img class="download" src="https://img.icons8.com/material/24/null/download--v1.png"/></a>
+                                        </div>
+                                                                    
+                                        <?php }} 
+                                    else { ?>  
+                                                        
+                                                        <tr>
                                     <div class="missing">
                                         <td colspan="5">Data masih kosong.</td>
                                     </div>
@@ -356,8 +507,6 @@
                         ?>
                     </div>
                 </div>
-                </div>
-                
             </div>
 
             <!-- Footer -->
@@ -385,7 +534,7 @@
             </div>
  
         
-            <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         </div>
     </body>
 </html>

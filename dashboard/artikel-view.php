@@ -1,5 +1,5 @@
 <!-- <?= 
-    include '../../koneksi.php';
+    include '../koneksi.php';
     ?> -->
 
 <?php 
@@ -10,7 +10,7 @@
     <!DOCTYPE html>
     <html>
         <head>
-            <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="./artikel-view.css">
         </head>
     
@@ -187,7 +187,7 @@
                                                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                                                 </div>
                                                                 <div class="carousel-inner">
-                                                                    <img src="../artikel/img/<?= $row_kat['gambar_berita']; ?>" class="d-block w-100" width="900">
+                                                                    <img src="../admin-site/artikel/img/<?= $row_kat['gambar_berita']; ?>" class="d-block w-100" width="900">
                                                                 </div>
                                                                 </div>
                                                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -215,7 +215,7 @@
                 <!-- Footer -->
             
             
-                <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+                <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
             </div>
         </body>
     </html>
