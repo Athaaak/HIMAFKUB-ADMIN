@@ -142,7 +142,8 @@
                 <div class="header-content">
                     <img src="./img-source/aksara-big.png" class="content-logo">
                     
-                    <label class="header-text">BEM FK UB 2022 <br> Menggapai Asa Menembus Cakrawala</label>
+                    <label class="header-text">BEM FK UB 2022</label>
+                    <label class="header-text down">Menggapai Asa Menembus Cakrawala</label>
                 </div>
             </div>
             <div class="text-container">
@@ -258,7 +259,7 @@
                     </label>
                 </div>
                 <div class="dg-foto">
-                    <img src="./img-source/dummy2.jpg" width="1080" height="720">
+                    <img src="./img-source/ORGANOGRAM 1.png" width="1080" height="720">
                 </div>
             </div>
 
